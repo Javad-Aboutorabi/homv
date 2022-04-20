@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Hello world");
         int test = 0;
         double testDouble = 0.0;
         int a = 2;
