@@ -13,9 +13,10 @@ public class PracticeOne {
         } else if (selector == 3) {
             int a = area(12, 5);
             System.out.println("area is : " + a);
+
         }
 
-        factor(5);
+        factor(25);
     }
 
     public static void factor(int f) {
