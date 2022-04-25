@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PracticeOne {
     public static void main(String[] args) {
-        int selector = 7;
+        int selector = 6;
         if (selector == 1) {
             mull();
         } else if (selector == 2) {
@@ -22,10 +22,12 @@ public class PracticeOne {
             System.out.println("result : " + s);
         } else if (selector == 6) {
             // list();
-            hob();
-            zoj(100);
-            sum(4);
-
+            // hob();
+            //zoj(100);
+            //sum(4);
+            tavan(6);
+            matn();
+            amal(10,10);
             /*
             tamrine Yaroo
             int sum = sum(100);
@@ -159,8 +161,26 @@ public class PracticeOne {
 
     }
 
-}
+    public static int tavan(int a) {
+        int x = a * a;
+        System.out.println("tavane adade shoma   " + x + "   mibashad");
+        return x ;
+    }
 
+    public static String matn() {
+        String s ="I am programmer" ;
+        System.out.println(s);
+        return s ;
+    }
+
+    public static void amal(int a , int b) {
+        int x = a * b  ;
+        int y = a + b ;
+        int z = a/b ;
+        int w = a - b ;
+        System.out.println("zarb :"+x +"\n"+ "jam :"+ y+"\n"+"taghsim :"+z+"\n"+"menha :"+ w);
+    }
+}
 
 
 
