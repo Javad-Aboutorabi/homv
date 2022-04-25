@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PracticeOne {
     public static void main(String[] args) {
-        int selector = 6;
+        int selector = 7;
         if (selector == 1) {
             mull();
         } else if (selector == 2) {
@@ -23,7 +23,17 @@ public class PracticeOne {
         } else if (selector == 6) {
             // list();
             hob();
-            zoj();
+            zoj(100);
+            sum(4);
+
+            /*
+            tamrine Yaroo
+            int sum = sum(100);
+            System.out.println("sum = " + sum);
+            */
+
+        } else if (selector == 7) {
+            aray();
         }
     }
 
@@ -72,7 +82,7 @@ public class PracticeOne {
             b = (i) * b;
         }
         System.out.println("-------------------------------------------------------");
-        System.out.println("factoriel =>  " + b);
+        System.out.println("factories =>  " + b);
     }
 
     public static void mull() {
@@ -110,13 +120,50 @@ public class PracticeOne {
         }
 
     }
-    public static void zoj () {
 
-        for (int i = 0; i <= 100; i += 2) {
+    public static void sum(int had) {
+        int sum = 0;
+        for (int i = had; i >= 0; i--) {
+            sum = sum + i;
+        }
+        System.out.println("sum : " + sum);
+    }
+
+
+    public static void zoj(int had) {
+        for (int i = 0; i <= had; i += 2) {
             System.out.print(i + "\t");
             if (i % 5 == 0) {
-                System.out.println("");
+                System.out.println();
             }
         }
     }
+
+    public static double pi() {
+        return 3.14;
+    }
+
+    public static void aray() {
+        System.out.println("aray");
+        int[] a = {3, 39, 0, 54, 78, 88, 100};
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("element : " + a[i]);
+        }
+        for (int i = 0; i < a.length; i++) {
+            a[i] = i * 10;
+        }
+        System.out.println("-----------------------------------------------------");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("element : " + a[i]);
+        }
+
+    }
+
 }
+
+
+
+
+
+
+
