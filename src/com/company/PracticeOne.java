@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class PracticeOne {
     public static void main(String[] args) {
-        int selector = 0;
-
+        int selector = 6;
         if (selector == 1) {
             mull();
         } else if (selector == 2) {
@@ -14,9 +13,56 @@ public class PracticeOne {
             int a = area(12, 5);
             System.out.println("area is : " + a);
 
+        } else if (selector == 4) {
+            factor(5);
+        } else if (selector == 5) {
+            Scanner scanner = new Scanner(System.in);
+            int UserInput = scanner.nextInt();
+            String s = bakhshi(UserInput);
+            System.out.println("result : " + s);
+        } else if (selector == 6) {
+            // list();
+            hob();
+            zoj();
         }
+    }
 
-        factor(25);
+    public static void list() {
+        String[] list = {"Dr javad",
+                "prof Hossein",
+                "Reza sag",
+                "Sag mammad",
+                "reza Koone sarbaz",
+                "Kiyounian",
+                "farhad kiri",
+                "mamad HakimDi",
+                "rimin kirjooon",
+                "liskt"};
+
+        for (int i = 9; i >= 0; i--) {
+            System.out.println(list[i]);
+
+        }
+        for (int j = 0; j <= 9; j++) {
+            System.out.println(list[j]);
+        }
+    }
+
+
+    public static String bakhshi(int num) {
+        String answer = "";
+        if (num % 2 == 0)
+            answer = answer + " , " + "two";
+        if (num % 3 == 0)
+            answer = answer + " , " + "three";
+        if (num % 5 == 0)
+            answer = answer + " , " + "five";
+        if (num % 7 == 0)
+            answer = answer + " , " + "seven";
+        if (num % 11 == 0)
+            answer = answer + " , " + "eleven";
+        return answer;
+
     }
 
     public static void factor(int f) {
@@ -28,8 +74,6 @@ public class PracticeOne {
         System.out.println("-------------------------------------------------------");
         System.out.println("factoriel =>  " + b);
     }
-
-//    5*4*3*2*1
 
     public static void mull() {
         for (int i = 0; i <= 10; i++) {
@@ -53,16 +97,26 @@ public class PracticeOne {
         return length * width;
     }
 
+    public static void hob() {
+        int i;
+        for (i = 1; i <= 100; i++) {
 
+            if (i % 5 == 0) {
+                System.out.println("hob");
+            } else {
+                System.out.print(i + "\t");
+
+            }
+        }
+
+    }
+    public static void zoj () {
+
+        for (int i = 0; i <= 100; i += 2) {
+            System.out.print(i + "\t");
+            if (i % 5 == 0) {
+                System.out.println("");
+            }
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
