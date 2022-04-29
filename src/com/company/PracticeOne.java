@@ -25,9 +25,12 @@ public class PracticeOne {
             // hob();
             //zoj(100);
             //sum(4);
-            tavan(6);
-            matn();
-            amal(10,10);
+            int pow = tavan(6);
+            System.out.println("pow is = " + pow);
+
+
+            System.out.println(matn());
+            amal(10, 10);
             /*
             tamrine Yaroo
             int sum = sum(100);
@@ -162,23 +165,15 @@ public class PracticeOne {
     }
 
     public static int tavan(int a) {
-        int x = a * a;
-        System.out.println("tavane adade shoma   " + x + "   mibashad");
-        return x ;
+        return (int) Math.pow(a, 2.0);
     }
 
     public static String matn() {
-        String s ="I am programmer" ;
-        System.out.println(s);
-        return s ;
+        return "I am programmer";
     }
 
-    public static void amal(int a , int b) {
-        int x = a * b  ;
-        int y = a + b ;
-        int z = a/b ;
-        int w = a - b ;
-        System.out.println("zarb :"+x +"\n"+ "jam :"+ y+"\n"+"taghsim :"+z+"\n"+"menha :"+ w);
+    public static void amal(int a, int b) {
+        System.out.println("zarb :" +(a * b) + "\n" + "jam :" + (a + b )+ "\n" + "taghsim :" + (a / b) + "\n" + "menha :" + (a - b));
     }
 }
 
