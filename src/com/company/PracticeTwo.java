@@ -18,6 +18,12 @@ public class PracticeTwo {
             list.add(r.nextInt(100));
         }
         System.out.println(list);
+        int j = 0;
+        for (int i = 0; i <list.size(); i++){
+            if(list.get(i) > j ){
+                System.out.println(list);
+            }
+        }
 
 
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PracticeOne {
     public static void main(String[] args) {
-        int selector = 6;
+        int selector = 8;
         if (selector == 1) {
             mull();
         } else if (selector == 2) {
@@ -25,12 +25,12 @@ public class PracticeOne {
             // hob();
             //zoj(100);
             //sum(4);
-            int pow = tavan(6);
-            System.out.println("pow is = " + pow);
+            //int pow = tavan(6);
+            //System.out.println("pow is = " + pow);
 
 
-            System.out.println(matn());
-            amal(10, 10);
+           // System.out.println(matn());
+           // amal(10, 10);
             /*
             tamrine Yaroo
             int sum = sum(100);
