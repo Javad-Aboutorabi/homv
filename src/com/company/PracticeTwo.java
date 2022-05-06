@@ -12,19 +12,30 @@ public class PracticeTwo {
     }
 
     public static void rezaSik() {
-        ArrayList<Integer> list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<>();
         Random r = new Random();
-        for (int i = 0; i <= 10; i++) {
-            list.add(r.nextInt(100));
+        for (int i = 0; i <= 4; i++) {
+            int random = r.nextInt(100);
+            list.add(random);
         }
         System.out.println(list);
-        int j = 0;
-        for (int i = 0; i <list.size(); i++){
-            if(list.get(i) > j ){
-                System.out.println(list);
+
+
+        for (int j = 1; j < list.size(); j++) {
+            int max = list.get(0);
+            int livan3;
+            for (int i = 1; i < list.size(); i++) {
+                if (list.get(i) < max) {
+                    livan3 = list.get(i);
+                    list.set(i, max);
+                    list.set(i - 1, livan3);
+                } else {
+                    max = list.get(i);
+                }
             }
         }
-
+        System.out.println("------------------- Sorted ----------------------");
+        System.out.println(list);
 
 
 
