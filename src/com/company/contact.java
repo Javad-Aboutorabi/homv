@@ -7,7 +7,7 @@ public class contact {
     private int homenumber;
     private String email;
     private String address;
-    private String relationship;
+    public String relationship;
 
 
     public contact(String name, String family, int mobilenumber, int homenumber, String email, String address, String relationship) {
